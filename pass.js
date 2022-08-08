@@ -9,15 +9,15 @@ let numbers = [1,2,3,4,5,6,7,8,9]
 button.addEventListener('click',()=>{
     
     const interval = setInterval(()=>{
+    audio[0].play();
     let  password ='';
     password = takeOutElements(letters,4) + takeOutElements(specialChars,2) + takeOutElements(numbers,2);
-    para.innerHTML = password; 
-    audio[0].play()
-     setTimeout(() => {
-       clearInterval(interval)
-       header[0].style.display = 'block'
-       audio[0].pause()
-   }, 2000);  
+    para.innerHTML = password;
+        setTimeout(() => {
+            header[0].style.display = 'block'
+            clearInterval(interval)
+            // audio[0].pause()
+      }, 2000);  
     },50)
 })
 

@@ -17,9 +17,9 @@ h1{
     font-size: 20px;
     color:blue;
 }
-audio{
+/* audio{
     display:none;
-}
+} */
 div#individual{
     width:35%;
     height:40vh;
